@@ -60,6 +60,6 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         uses: actions/attest-build-provenance@v1
         with:
-          subject-name: yinjiayi/test
+          subject-name: index.docker.io/yinjiayi/test
           subject-digest: ${{ steps.build-and-push.outputs.digest }}
           push-to-registry: true
